@@ -1,0 +1,36 @@
+.Display-Panel {
+    background-color: var(--green-900);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-24);
+    padding: var(--size-24);
+    color: var(--grey-400);
+}
+
+.Display-Panel h3 {
+    color: var(--grey-50);
+}
+
+.Display-Panel button {
+    text-transform: uppercase;
+    color: var(--green-900);
+}
+
+.Title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.Amount-Display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.813rem;
+}
+
+.Amount-Display .Amount {
+    color: var(--green-400);
+    font-weight: 600;
+    font-size: var(--size-24);
+}

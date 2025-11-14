@@ -7,11 +7,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>SPLITTER</h1>
+        <h1>SPLI
+        <br />TTER</h1>
       </header>
 
-      <CalcPanel />
-      <DisplayPanel />
+      <div className="Calculator">
+        <CalcPanel />
+        <DisplayPanel />
+      </div>
+      
+      <div className="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
     </div>
   );
 }

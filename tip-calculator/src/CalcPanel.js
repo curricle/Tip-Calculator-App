@@ -1,3 +1,5 @@
+import './CalcPanel.css';
+
 function NumInput({ title, amount }) {
     return(
         <div className="Num-Input-Container">
@@ -21,7 +23,7 @@ function TipButtons() {
                 <Button amount="5%" />
                 <Button amount="10%" />
                 <Button amount="15%" />
-                <Button amount="20%" />
+                <Button amount="25%" />
                 <Button amount="50%" />
                 <Button amount="Custom" canBeSet="Custom" />
             </div>
