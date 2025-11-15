@@ -1,6 +1,7 @@
 import './CalcPanel.css';
 import dollar from './images/icon-dollar.svg';
 import person from './images/icon-person.svg'
+import { useState } from 'react';
 
 function NumInput({ title, amount, icon, inputId }) {
     const inputIconBackground = {
@@ -41,7 +42,7 @@ function NumInput({ title, amount, icon, inputId }) {
             <h3>{title}</h3>
             <div className="Num-Input">
                 <input 
-                    inputmode={setInputMode(inputId)} 
+                    inputMode={setInputMode(inputId)} 
                     pattern={setInputPattern(inputId)}
                     placeholder="0"  
                     style={inputIconBackground} 
@@ -58,11 +59,20 @@ function Button({ amount, canBeSet }) {
 }
 
 function TipButtons() {
+    const isSelected = useState(false);
+    const setIsSelected = useState(false);
+
+    const handleClick = () => {
+        setIsSelected(!isSelected);
+        console.log("I Got Clicked");
+    }
+
     return(
         <div className="Tip-Buttons">
             <h3>Select Tip %</h3>
             <div className="Buttons-List">
-                <Button amount="5%" />
+                {/* <!-- these are react components that haven't been created, not regular html buttons --> */}
+                <Button amount="5%" onClick={handleClick} className={isSelected ? '.Selected' : ''} />
                 <Button amount="10%" />
                 <Button amount="15%" />
                 <Button amount="25%" />

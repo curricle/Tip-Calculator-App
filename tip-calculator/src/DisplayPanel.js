@@ -17,8 +17,8 @@ function AmountDisplay({ title, amount }) {
 function DisplayPanel() {
   return (
     <div className="Display-Panel">
-        <AmountDisplay title="Tip Amount" amount="$4.29" />
-        <AmountDisplay title="Total" amount="$32.79" />
+        <AmountDisplay title="Tip Amount" amount="$0.00" />
+        <AmountDisplay title="Total" amount="$0.00" />
 
         <button className="Disabled">Reset</button>
     </div>
