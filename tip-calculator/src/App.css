@@ -4,7 +4,8 @@ h1, h3 {
 }
 
 h3 {
-  font-size: var(--size-16);;
+  font-size: var(--size-16);
+  color: var(--grey-500);
 }
 
 button {
@@ -18,7 +19,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--green-400);
+  background-color: var(--green-200);
   color: var(--green-900);
 }
 
@@ -31,6 +32,10 @@ button:hover {
 
 .App-header {
   text-align: center;
+  color: var(--grey-600);
+  font-size: var(--size-16);
+  line-height: var(--size-48);
+  letter-spacing: var(--size-8);
 }
 
 .Calculator {
@@ -46,6 +51,22 @@ button:hover {
     background-color: var(--green-750);
 }
 
-.Selected {
+.Selected, .Active {
     background-color: var(--green-400);
+    color: var(--green-900);
+}
+
+.attribution {
+  background-color: var(--white);
+  padding: var(--size-24);
+  font-size: 0.7rem;
+  margin-top: -40px;
+}
+
+.attribution a {
+  color: var(--green-400);
+}
+
+.attribution a:hover {
+  color: var(--green-900);
 }
